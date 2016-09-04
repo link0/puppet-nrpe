@@ -1,7 +1,7 @@
 #
 define nrpe::command (
   $command = undef,
-  $arguments = "",
+  $arguments = '',
 ) {
 
   if $command == undef {
