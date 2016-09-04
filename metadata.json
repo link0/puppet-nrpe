@@ -1,0 +1,29 @@
+{
+   "name" : "link0-nrpe",
+   "summary" : "Puppet NRPE module",
+   "author" : "Link0",
+   "project_page" : "https://github.com/link0/puppet-nrpe",
+   "issues_url" : "https://github.com/link0/puppet-nrpe/issues",
+   "source" : "https://github.com/link0/puppet-nrpe",
+   "version" : "0.0.1",
+   "tags" : [
+      "nrpe",
+      "nagios"
+   ],
+   "license" : "MIT",
+   "operatingsystem_support" : [
+      {
+         "operatingsystem" : "Debian",
+         "operatingsystemrelease" : [
+            "8.5"
+         ]
+      }
+   ],
+   "dependencies" : [
+      {
+         "name" : "puppetlabs/stdlib",
+         "version_requirement" : ">= 3.2.0 <5.0.0"
+      }
+   ]
+}
+
