@@ -5,7 +5,7 @@
    "project_page" : "https://github.com/link0/puppet-nrpe",
    "issues_url" : "https://github.com/link0/puppet-nrpe/issues",
    "source" : "https://github.com/link0/puppet-nrpe",
-   "version" : "0.0.1",
+   "version" : "0.0.2",
    "tags" : [
       "nrpe",
       "nagios"
