@@ -13,8 +13,8 @@ define nrpe::command (
   $template = 'nrpe/command.erb'
 
   file { "nrpe-${name}":
-    name    => "/etc/nagios/nrpe.d/${name}.cfg",
     ensure  => file,
+    name    => "/etc/nagios/nrpe.d/${name}.cfg",
     content => template($template),
     notify  => Service[$nrpe::service_name],
   }
