@@ -1,3 +1,5 @@
+# == Class: nrpe::params
+#
 class nrpe::params {
 
   $package_manage = true

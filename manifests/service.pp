@@ -1,3 +1,5 @@
+# == Class: nrpe::service
+#
 class nrpe::service inherits nrpe {
   if $nrpe::service_manage {
     service { 'nrpe':

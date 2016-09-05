@@ -1,3 +1,4 @@
+# == Class: nrpe::command
 #
 define nrpe::command (
   $command = undef,

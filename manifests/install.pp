@@ -1,3 +1,5 @@
+# == Class: nrpe::install
+#
 class nrpe::install inherits nrpe {
   if $nrpe::package_manage {
     package { 'nrpe':
