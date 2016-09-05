@@ -85,6 +85,42 @@ If the service is managed by puppet, what should be ensured. Type: `running` or 
 ### `service_name`
 If the service is managed by puppet, what the name of the service should be. Type: `string` Defaults to 'nagios-nrpe-server'.
 
+### `config_manage`
+Whether you want puppet to manage nrpe.cfg. Type: `boolean`, defaults to `true`
+
+### `config_file`
+If the configuration is managed by puppet, which file should be managed. Type: `absolute_path`. Defaults to `/etc/nagios/nrpe.cfg`
+
+### `config_template`
+If the configuration is managed by puppet, which template should be used. Type: `string`. Defaults to `nrpe/nrpe.cfg.erb`
+
+### `allowed_hosts`
+Which hosts are allowed to connect to NRPE. Type: `array`. Defaults to `['127.0.0.1']`.
+
+### `port`
+Which port should NRPE be listening on. Type: `integer`. Defaults to `5666`.
+
+### `user`
+Which user should NRPE be running under. Type: `string`. Defaults to `nagios`.
+
+### `group`
+Which group should NRPE be running under. Type: `string`. Defaults to `nagios`.
+
+### `pid_file`
+Which file should be used to store the PID. Type `absolute_path`. Defaults to `/var/run/nagios/nrpe.pid`.
+
+### `log_facility`
+Which log facility should NRPE be logging to. Type: `string`. Defaults to `daemon`.
+
+### `command_timeout`
+What timeout should be set for commands. Type: `integer`. Defaults to `60`.
+
+### `connection_timeout`
+What timeout should be set for connection issues. Type: `integer`. Defaults to `300`.
+
+### `debug`
+Should NRPE be logging debug output. Type: `boolean`. Defaults to `false`.
+
 [build-img]: https://travis-ci.org/link0/puppet-nrpe.svg
 [build-url]: https://travis-ci.org/link0/puppet-nrpe
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg
