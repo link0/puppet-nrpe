@@ -1,4 +1,7 @@
 # link0/puppet-nrpe
+[![Build status][build-img]][build-url]
+[![License badge][license-img]][license-url]
+[![Puppet badge][puppet-img]][puppet-url]
 
 ## Overview
 
@@ -82,3 +85,9 @@ If the service is managed by puppet, what should be ensured. Type: `running` or 
 ### `service_name`
 If the service is managed by puppet, what the name of the service should be. Type: `string` Defaults to 'nagios-nrpe-server'.
 
+[build-img]: https://travis-ci.org/link0/puppet-nrpe.svg
+[build-url]: https://travis-ci.org/link0/puppet-nrpe
+[license-img]: https://img.shields.io/badge/license-MIT-blue.svg
+[license-url]: https://github.com/link0/puppet-nrpe/blob/master/LICENSE
+[puppet-img]: https://img.shields.io/puppetforge/dt/link0/nrpe.svg
+[puppet-url]: https://forge.puppetlabs.com/link0/nrpe
